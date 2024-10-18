@@ -1,0 +1,312 @@
+   /* Chat Container */
+   .chat-container {
+       display: flex;
+       flex-direction: column;
+       width: auto;
+       margin: 0 auto;
+       padding: 20px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+     }
+   
+     .title{
+       margin: auto;
+       margin-top: 10px;
+       font-family: 'Segoe UI';
+     }
+   
+     .logoimage{
+       margin: auto;
+     }
+   
+     /* Button Container */
+     .subtitle-class {
+       margin-bottom: 20px;
+       margin: auto;
+       color: 'black';
+       font-size: '38px';
+       background-color: '#007bff';
+       padding: '10px';
+       font-family:'Helvetica';
+     }
+     
+     /* Label Style */
+     .subtitle-class label {
+       display: block;
+       margin: auto;
+       font-size: 15px;
+       color: #333;
+       margin-bottom: 18px;
+       font-family:'Segoe UI';
+       margin-top: 3px;
+       font-weight:600;
+     }
+     
+     /* Button Style */
+     .quickstart {
+       margin: auto;
+       width: 598px;
+       margin-bottom: 15px;
+       height: 45px;
+       font-size: 18px;
+       font-weight:600;
+       background-color: #F1F1F1;
+       color: #000000;
+       border: 1px solid #000000;
+       font-family: 'Segoe UI';
+       border-radius: 10px;
+       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+       cursor: pointer;
+     }
+     
+     .quickstart:disabled {
+       background-color: #ccc;
+       cursor: not-allowed;
+     }
+     
+     /* Chat Messages */
+     .chat-messages {
+       overflow-y: auto;
+       height: 400px;
+       max-height: 400px;
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       padding: 1rem;
+       scrollbar-width: thin; /* For Firefox */
+       scrollbar-color: transparent transparent; /* For Firefox */
+     }
+     
+     .chat-messages::-webkit-scrollbar {
+       width: 6px; /* For Chrome, Safari, and Opera */
+     }
+     
+     .chat-messages::-webkit-scrollbar-thumb {
+       background-color: transparent; /* For Chrome, Safari, and Opera */
+       border-radius: 3px;
+     }
+     
+     .chat-messages::-webkit-scrollbar-track {
+       background-color: transparent; /* For Chrome, Safari, and Opera */
+     }
+     
+   
+     /* UserPrompt */
+   .user-prompt {
+     background-color: #f3f4f6;
+     padding: 1rem;
+     border-radius: 0.375rem 0.375rem 0 0.375rem;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     
+   }
+   
+   /* AssistantResponse */
+   .assistant-response {
+     background-color: #dbeafe;
+     padding: 1rem;
+     border-radius: 0.375rem 0.375rem 0.375rem 0;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+   }
+     
+     /* Message Style */
+     .messageClass {
+      margin-bottom: 10px;
+      margin: auto;
+      width: 40%;
+      max-height: fit-content;
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px 5px #ccc;
+      display: flex;
+      flex-direction: column;
+    }
+     
+     /* Chat Form */
+     .chat-form {
+       display: flex;
+     }
+     
+     /* Chat Input */
+     .chat-input {
+       flex: 1;
+       padding: 10px;
+       font-size: 16px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       margin-right: 10px;
+     }
+   
+     .input-container {
+       width: 100%;
+       padding: 0.5rem 1rem;
+       border-radius: 10px;
+       margin-right: 10px;
+       border: 1px solid #d1d5db;
+       outline: none;
+       background-color: #F1F1F1;
+       font-weight:600;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+   
+     .input-container:focus {
+       border-color: #000000;
+       /* ring-offset-shadow: 0 0 0 2px #bfdbfe; */
+     }
+   
+     /* InputPrompt */
+     .prompt-input {
+      display: flex;
+      width: 65%;
+      margin: auto;
+     }
+   
+     .send-button {
+       /* padding: 10px 20px;
+       font-size: 16px;
+       background-color: #285fa7;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer; */
+       padding: 0.5rem 1rem;
+       background-color: #F1F1F1;
+       border: 1px solid #d1d5db;
+       color: #fff;
+       /* border-radius: 0 0.375rem 0.375rem 0; */
+       border-radius: 10px;
+      
+       transition: background-color 0.2s ease-in-out;
+     }
+   
+     .upload-icon{
+       color: #000000;
+     }
+   
+     .upload-icon:hover{
+       color: #ffffff;
+     }
+   
+     .send-button:hover {
+       background-color: #282828;
+     }
+     
+     .send-button:disabled {
+       background-color: #ccc;
+       cursor: not-allowed;
+     }
+   
+     .greeting-class {
+       font-size: 26px;
+       color: #09a29fd2;
+     }
+     
+
+   .assistantMessage {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-right: 90%;
+    width: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+
+   .assistant-text{
+    width: 100%;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   }
+
+   .user-text{
+    width: 100%;
+    margin: 0;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   }
+
+   
+   .userMessage {
+     display: flex;
+     align-items: flex-end;
+     justify-content: flex-end;
+     margin-bottom: 10px;
+     /* margin-left: 90%; */
+     width: 100%;
+     max-width: 100%;
+     flex-grow: 1;
+   }
+
+   .tableinfo{
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+   }
+   
+   /* .assistantMessage {
+     justify-content: flex-end;
+   } */
+   
+   .messageContent {
+     max-width: 100%;
+   }
+
+   .usermessageContent{
+    max-width: 100%;
+
+   }
+   
+   .assistantImage {
+     width: 40px;
+     height: 40px;
+     order: -1; 
+     border-radius: 50%;
+     object-fit: cover;
+     margin: 0 10px;
+   }
+   
+   .userImage {
+    width: 40px;
+    height: 40px;
+    order: 1; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+   }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-weight:600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+ @media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}  
